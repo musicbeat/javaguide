@@ -6,11 +6,11 @@
           type="text/javascript"></script>
   <link href="http://www.google.com/favicon.ico"
         type="image/x-icon" rel="shortcut icon" />
-  <title>Blackhawk Java Style</title>
+  <title>musicbeat Java Style</title>
 </head>
 <body>
-  <h1>Blackhawk Java Style</h1>
-  <p>Adapted from <a href="https://google-styleguide.googlecode.com/svn/trunk/javaguide.html">Google Style Guide</a>. These style guides are licensed under the CC-By 3.0 License, which encourages you to share these documents. See <a href="http://creativecommons.org/licenses/by/3.0/" rel="nofollow">http://creativecommons.org/licenses/by/3.0/</a> for more details. So far, all that has changed is the use of the word "Blackhawk" in place of the word "Google", and "com.bhn" in place of "com.google".</p>
+  <h1>musicbeat Java Style</h1>
+  <p>Adapted from <a href="https://google-styleguide.googlecode.com/svn/trunk/javaguide.html">Google Style Guide</a>. These style guides are licensed under the CC-By 3.0 License, which encourages you to share these documents. See <a href="http://creativecommons.org/licenses/by/3.0/" rel="nofollow">http://creativecommons.org/licenses/by/3.0/</a> for more details. So far, all that has changed is the use of the word "musicbeat" in place of the word "Google", and "com.musicbeat" in place of "com.google".</p>
   <div class="change">Last changed: September 26, 2014</div>
 <table border="0">
 <tr>
@@ -248,9 +248,9 @@
 </table>
 <div><a name="s1-introduction"/>
     <h2>1 Introduction&nbsp;<a href="#s1-introduction"><img height="21" width="21" src="javaguidelink.png"/></a></h2>
-    <p>This document serves as the <strong>complete</strong> definition of Blackhawk's coding standards for
+    <p>This document serves as the <strong>complete</strong> definition of musicbeat's coding standards for
 source code in the Java™ Programming Language. A Java source file is described as being <em>in
-Blackhawk Style</em> if and only if it adheres to the rules herein.</p><p>Like other programming style guides, the issues covered span not only aesthetic issues of
+musicbeat Style</em> if and only if it adheres to the rules herein.</p><p>Like other programming style guides, the issues covered span not only aesthetic issues of
 formatting, but other types of conventions or coding standards as well. However, this document
 focuses primarily on the <strong>hard-and-fast rules</strong> that we follow universally, and
 avoids giving <em>advice</em> that isn't clearly enforceable (whether by human or tool).
@@ -261,7 +261,7 @@ avoids giving <em>advice</em> that isn't clearly enforceable (whether by human o
   use the phrase "documentation comments", instead using the common term "Javadoc."</li></ol><p>Other "terminology notes" will appear occasionally throughout the document.</p><a name="s1.2-guide-notes"/>
     <h3>1.2 Guide notes&nbsp;<a href="#s1.2-guide-notes"><img height="21" width="21" src="javaguidelink.png"/></a></h3>
     <p>Example code in this document is <strong>non-normative</strong>. That is, while the examples
-are in Blackhawk Style, they may not illustrate the <em>only</em> stylish way to represent the
+are in musicbeat Style, they may not illustrate the <em>only</em> stylish way to represent the
 code. Optional formatting choices made in examples should not be enforced as rules.</p><a name="s2-source-file-basics"/>
     <h2>2 Source file basics&nbsp;<a href="#s2-source-file-basics"><img height="21" width="21" src="javaguidelink.png"/></a></h2>
     <a name="s2.1-file-name"/>
@@ -316,8 +316,8 @@ programs are <strong>broken</strong> and they must be <strong>fixed</strong>.</p
 statements.</p><a name="s3.3.3-import-ordering-and-spacing"/>
     <h4>3.3.3 Ordering and spacing&nbsp;<a href="#s3.3.3-import-ordering-and-spacing"><img height="21" width="21" src="javaguidelink.png"/></a></h4>
     <p>Import statements are divided into the following groups, in this order, with each group
-separated by a single blank line:</p><ol><li>All static imports in a single group</li><li><code>com.bhn</code> imports
-  (only if this source file is in the <code>com.bhn</code> package
+separated by a single blank line:</p><ol><li>All static imports in a single group</li><li><code>com.musicbeat</code> imports
+  (only if this source file is in the <code>com.musicbeat</code> package
   space)</li><li>Third-party imports, one group per top-level package, in ASCII sort order
   <ul><li>for example: <code>android</code>, <code>com</code>, <code>junit</code>, <code>org</code>,
     <code>sun</code></li></ul></li><li><code>java</code> imports</li><li><code>javax</code> imports</li></ol><p>Within a group there are no blank lines, and the imported names appear in ASCII sort
@@ -409,7 +409,7 @@ without the need to line-wrap.</p><a name="s4.5.1-line-wrapping-where-to-break"/
     <h4>4.5.1 Where to break&nbsp;<a href="#s4.5.1-line-wrapping-where-to-break"><img height="21" width="21" src="javaguidelink.png"/></a></h4>
     <p>The prime directive of line-wrapping is: prefer to break at a
 <strong>higher syntactic level</strong>. Also:</p><ol><li>When a line is broken at a <em>non-assignment</em> operator the break comes <em>before</em>
-  the symbol. (Note that this is not the same practice used in Blackhawk Style for other languages,
+  the symbol. (Note that this is not the same practice used in musicbeat Style for other languages,
   such as C++ and JavaScript.)
     <ul><li>This also applies to the following "operator-like" symbols: the dot separator
       (<code class="prettyprint lang-java">.</code>), the ampersand in type bounds
@@ -466,7 +466,7 @@ start or end of a line, only <em>interior</em> space.</p><a name="s4.6.3-horizon
     <h4>4.6.3 Horizontal alignment: never required&nbsp;<a href="#s4.6.3-horizontal-alignment"><img height="21" width="21" src="javaguidelink.png"/></a></h4>
     <p class="terminology"><strong>Terminology Note:</strong> <em>Horizontal alignment</em> is the
 practice of adding a variable number of additional spaces in your code with the goal of making
-certain tokens appear directly below certain other tokens on previous lines.</p><p>This practice is permitted, but is <strong>never required</strong> by Blackhawk Style. It is not
+certain tokens appear directly below certain other tokens on previous lines.</p><p>This practice is permitted, but is <strong>never required</strong> by musicbeat Style. It is not
 even required to <em>maintain</em> horizontal alignment in places where it was already used.</p><p>Here is an example without alignment, then using alignment:</p><pre class="prettyprint lang-java">
 private int x; // this is fine
 private Color color; // this too
@@ -604,7 +604,7 @@ rather than <code class="badcode">3000000000l</code>.</p><a name="naming"/><a na
     <a name="s5.1-identifier-names"/>
     <h3>5.1 Rules common to all identifiers&nbsp;<a href="#s5.1-identifier-names"><img height="21" width="21" src="javaguidelink.png"/></a></h3>
     <p>Identifiers use only ASCII letters and digits, and in two cases noted below, underscores. Thus
-each valid identifier name is matched by the regular expression <code>\w+</code> .</p><p> In Blackhawk Style special prefixes or
+each valid identifier name is matched by the regular expression <code>\w+</code> .</p><p> In musicbeat Style special prefixes or
 suffixes, like those seen in the examples <code class="badcode">name_</code>,
 <code class="badcode">mName</code>, <code class="badcode">s_name</code> and
 <code class="badcode">kName</code>, are <strong>not</strong> used.</p><a name="s5.2-specific-identifier-names"/>
@@ -677,7 +677,7 @@ be styled as constants.</p><a name="s5.2.8-type-variable-names"/>
     <h3>5.3 Camel case: defined&nbsp;<a href="#s5.3-camel-case"><img height="21" width="21" src="javaguidelink.png"/></a></h3>
     <p>Sometimes there is more than one reasonable way to convert an English phrase into camel case,
 such as when acronyms or unusual constructs like "IPv6" or "iOS" are present. To improve
-predictability, Blackhawk Style specifies the following (nearly) deterministic scheme.</p><p>Beginning with the prose form of the name:</p><ol><li>Convert the phrase to plain ASCII and remove any apostrophes. For example, "Müller's
+predictability, musicbeat Style specifies the following (nearly) deterministic scheme.</p><p>Beginning with the prose form of the name:</p><ol><li>Convert the phrase to plain ASCII and remove any apostrophes. For example, "Müller's
   algorithm" might become "Muellers algorithm".</li><li>Divide this result into words, splitting on spaces and any remaining punctuation (typically
   hyphens).
 
